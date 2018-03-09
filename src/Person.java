@@ -9,8 +9,8 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-
-    public String fullName() {
+    @SuppressWarnings({"deprecation", "unchecked"})
+    public String sortName() {
         return String.format("%s %s", firstName, lastName);
     }
 }
